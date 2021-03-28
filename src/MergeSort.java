@@ -77,13 +77,15 @@ class MergeSort {
             arr[i] = (int) randint(0,quantidade_numeros);
         }
 
+        int arrfixo[] = {110, 130, 150, 170, 190, 100, 120, 140, 160, 180};
+
         System.out.println("Numeros gerados");
-        mostraArray(arr);
+        mostraArray(arrfixo);
 
         MergeSort ob = new MergeSort();
-        ob.sort(arr, 0, arr.length - 1);
+        ob.sort(arrfixo, 0, arr.length - 1);
 
         System.out.println("\nNumeros Ordenados");
-        mostraArray(arr);
+        mostraArray(arrfixo);
     }
 }
